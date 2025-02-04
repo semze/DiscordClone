@@ -1,10 +1,10 @@
-// Ensure Firebase is available before initializing
+// ✅ Ensure Firebase is loaded
 if (typeof firebase === "undefined") {
     console.error("❌ Firebase SDK not loaded. Check script tags in main.html.");
 } else {
     console.log("✅ Firebase SDK loaded.");
 
-    // Firebase Configuration
+    // ✅ Firebase Configuration
     const firebaseConfig = {
         apiKey: "AIzaSyDmXNlls52XByjO4AUzKtWkNlMaCaHDA5A",
         authDomain: "discord-clone-6aa55.firebaseapp.com",
@@ -16,9 +16,10 @@ if (typeof firebase === "undefined") {
         measurementId: "G-FQWGHF1442"
     };
 
+    // ✅ Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-    // Make Firebase Database globally accessible
+    // ✅ Store Database Globally
     window.db = firebase.database();
     console.log("✅ Firebase Database Initialized.");
 }
