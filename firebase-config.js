@@ -1,4 +1,4 @@
-// ✅ Ensure Firebase is loaded
+// ✅ Ensure Firebase SDK is loaded
 if (typeof firebase === "undefined") {
     console.error("❌ Firebase SDK not loaded. Check script tags in main.html.");
 } else {
